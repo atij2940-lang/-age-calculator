@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Age Calculator - Calculate your exact age in years, months and days.">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="brand">AGE CALCULATOR</div>
+      <h1>How old are you?</h1>
+      <p class="subtitle">Enter your date of birth to calculate your exact age.</p>
+
+      <form id="ageForm">
+        <label for="dob">Date of Birth</label>
+        <div class="input-row">
+          <input type="date" id="dob" required>
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+
+      <p id="error" class="error" aria-live="polite"></p>
+
+      <section id="result" class="result hidden" aria-live="polite">
+        <h2>Your Age</h2>
+        <div class="age-grid">
+          <div class="age-box"><strong id="years">0</strong><span>Years</span></div>
+          <div class="age-box"><strong id="months">0</strong><span>Months</span></div>
+          <div class="age-box"><strong id="days">0</strong><span>Days</span></div>
+        </div>
+
+        <div class="details">
+          <p><span>Next birthday</span><strong id="nextBirthday">—</strong></p>
+          <p><span>Days until birthday</span><strong id="daysUntil">—</strong></p>
+          <p><span>Total days lived</span><strong id="totalDays">—</strong></p>
+        </div>
+      </section>
+
+      <footer>Free • Fast • Mobile Friendly</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
